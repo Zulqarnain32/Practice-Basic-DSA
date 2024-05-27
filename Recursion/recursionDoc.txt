@@ -1,0 +1,50 @@
+  
+
+  Factorial 
+  Detailed Explanation of the Recursive Call
+  Let's go through the recursive calls step-by-step for recursionFactorial(6):
+  
+  recursionFactorial(6)
+  Since 6 !== 1, it returns 6 * recursionFactorial(5).
+  recursionFactorial(5)
+  Since 5 !== 1, it returns 5 * recursionFactorial(4).
+  recursionFactorial(4)
+  Since 4 !== 1, it returns 4 * recursionFactorial(3).
+  recursionFactorial(3)
+  Since 3 !== 1, it returns 3 * recursionFactorial(2).
+  recursionFactorial(2)
+  Since 2 !== 1, it returns 2 * recursionFactorial(1).
+  recursionFactorial(1)
+  This hits the base case, so it returns 1.
+  Now, let's compute the returned values step-by-step as they propagate back up the call stack:
+  
+  recursionFactorial(1) returns 1.
+  recursionFactorial(2) returns 2 * 1 = 2.
+  recursionFactorial(3) returns 3 * 2 = 6.
+  recursionFactorial(4) returns 4 * 6 = 24.
+  recursionFactorial(5) returns 5 * 24 = 120.
+  recursionFactorial(6) returns 6 * 120 = 720.
+
+
+
+
+
+ //Power
+ Detailed Explanation of the Recursive Call
+Let's go through the recursive calls step-by-step for power(2, 3):
+
+power(2, 3)
+Since 3 !== 0, it returns 2 * power(2, 2).
+power(2, 2)
+Since 2 !== 0, it returns 2 * power(2, 1).
+power(2, 1)
+Since 1 !== 0, it returns 2 * power(2, 0).
+power(2, 0)
+This hits the base case, so it returns 1.
+Now, let's compute the returned values step-by-step as they propagate back up the call stack:
+
+power(2, 0) returns 1.
+power(2, 1) returns 2 * 1 = 2.
+power(2, 2) returns 2 * 2 = 4.
+power(2, 3) returns 2 * 4 = 8.
+Thus, power(2, 3) evaluates to 8,    
